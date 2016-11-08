@@ -9,11 +9,11 @@
 
 ### AOP概述
     
-    做过J2EE开发的同学对AOP一定非常熟悉，在J2EE中，面向切面编程的实现一般有AspectJ、Spring Aop等，抱歉，我只用过这两个。AOP的主要名词有：Aspect、Pointcut、Advise等。在这里，我选用AspectJ做Android平台的AOP。
+做过J2EE开发的同学对AOP一定非常熟悉，在J2EE中，面向切面编程的实现一般有AspectJ、Spring Aop等，抱歉，我只用过这两个。AOP的主要名词   有：Aspect、Pointcut、Advise等。在这里，我选用AspectJ做Android平台的AOP。
 
 ### Gradle插件
     
-    AspectJ是在编译阶段对字节码进行操作，因此需要它独立的编译器ajc。在Android Studio中，可以通过Gradle脚本启用ajc编译器。为了方便开发AOP，我搞了个小插件（很简单的），在需要引入AOP的library或Application中引入就好。
+AspectJ是在编译阶段对字节码进行操作，因此需要它独立的编译器ajc。在Android Studio中，可以通过Gradle脚本启用ajc编译器。为了方便开发AOP，我搞了个小插件（很简单的），在需要引入AOP的library或Application中引入就好。
     
 ```
 buildscript {
