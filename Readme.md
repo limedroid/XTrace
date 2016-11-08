@@ -1,6 +1,5 @@
 # XTrace
 
----
 
 [XTrace](https://github.com/limedroid/XTrace.git)是AOP在Android的简单实践，踩了一系列坑。希望能帮助您
 将AOP运用到Android。欢迎star、fork，期待提出您的宝贵意见。
