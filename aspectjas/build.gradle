@@ -1,0 +1,31 @@
+apply plugin: 'groovy'
+apply plugin: "maven"
+
+
+dependencies {
+    compile gradleApi()
+    compile localGroovy()
+    compile 'com.android.tools.build:gradle:2.1.0'
+    compile 'org.aspectj:aspectjtools:1.8.8'
+    compile 'org.aspectj:aspectjrt:1.8.8'
+}
+
+repositories {
+    jcenter()
+}
+
+// 上传到本地代码库
+uploadArchives{
+    repositories{
+        mavenDeployer{
+            repository(url:uri('../repo'))
+            pom.groupId = 'cn.droidlover' // 组名
+            pom.artifactId = 'AspectJAs' // 插件名
+            pom.version = '1.0.2' // 版本号
+        }
+    }
+}
+
+
+
+

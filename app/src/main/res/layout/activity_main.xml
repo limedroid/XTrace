@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#ff3344"
+        android:gravity="center"
+        android:onClick="onMusic"
+        android:text="听音乐"
+        android:textColor="#fff" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="32dp"
+        android:background="#bb56dd"
+        android:gravity="center"
+        android:onClick="onMovie"
+        android:text="看电影"
+        android:textColor="#fff" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#dd5634"
+        android:gravity="center"
+        android:onClick="onChat"
+        android:text="聊天"
+        android:textColor="#fff" />
+
+
+</LinearLayout>
